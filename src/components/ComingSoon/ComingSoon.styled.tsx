@@ -18,7 +18,21 @@ const FrameContainer = styled.div`
   align-items: center;
   border-radius: 20px;
   border: 0.5px solid #3d79ef80;
+  position: relative;
 `;
+
+const RibbonContainers = styled.div`
+  display: none;
+  @media ${device.laptop} {
+    width: 20%;
+    display: flex;
+    > Image {
+      width: fit-content;
+    }
+  }
+`;
+
+const RibbonImages = styled.img``;
 
 const WaitListContainer = styled.div`
   display: flex;
@@ -237,6 +251,8 @@ const FormSubmit = styled.button`
 export {
   SectionContainer,
   FrameContainer,
+  RibbonContainers,
+  RibbonImages,
   WaitListContainer,
   TextContainer,
   MainText,

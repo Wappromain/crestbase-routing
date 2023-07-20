@@ -7,6 +7,8 @@ import {
   FrameContainerImage,
   ImageContainer,
   MainText,
+  RibbonContainers,
+  RibbonImages,
   SectionContainer,
   TextContainer,
   TimerText,
@@ -15,6 +17,7 @@ import {
 } from "./ComingSoon.styled";
 import { GlassContainerImage } from "../Assets/DownloadGlassContainer/DownloadGlassContainer.styled";
 import Countdown from "./Timer";
+import Image from "next/image";
 
 const ComingSoon = () => {
   const targetDate = new Date("2023-08-16T23:59:59Z");
@@ -33,6 +36,16 @@ const ComingSoon = () => {
   return (
     <SectionContainer>
       <FrameContainer>
+        {/* <RibbonContainers
+          style={{ position: "absolute", right: "80%", top: "71.9%" }}
+        >
+          <RibbonImages src="/images/waitlist-bottom-ribbons.svg" alt="" />
+        </RibbonContainers>
+        <RibbonContainers
+          style={{ position: "absolute", left: "81.95%", bottom: "50.9%" }}
+        >
+          <RibbonImages src="/images/waitlist-top-ribbons.svg" alt="" />
+        </RibbonContainers> */}
         <WaitListContainer>
           <TextContainer>
             <MainText>
