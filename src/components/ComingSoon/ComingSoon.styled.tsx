@@ -17,6 +17,7 @@ const FrameContainer = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+  border: 0.5px solid #3d79ef80;
 `;
 
 const WaitListContainer = styled.div`
@@ -27,7 +28,7 @@ const WaitListContainer = styled.div`
   padding: 10% 0 0 0;
   gap: 10px;
   align-items: center;
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     padding: 7% 0 0 0;
     flex-direction: row;
   }
@@ -38,7 +39,7 @@ const TextContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     align-self: flex-start;
     width: 50%;
   }
@@ -46,18 +47,19 @@ const TextContainer = styled.div`
 
 const MainText = styled.p`
   font-family: "Merriweather";
-  font-size: 30px;
+  font-size: calc(1.3rem + 3vw);
   font-weight: 900;
-  line-height: 30px;
+  line-height: calc(1.8rem + 3vw);
   letter-spacing: 0px;
   text-align: left;
   color: #262c55;
+  padding-bottom: 5px;
 
   > span {
     color: #3d79ef;
   }
 
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     font-size: 70px;
     font-weight: 900;
     line-height: 88px;
@@ -76,7 +78,7 @@ const TimerText = styled.p`
   color: #262c55;
   padding-top: 10px;
 
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     font-size: 52px;
     line-height: 94px;
   }
@@ -99,7 +101,7 @@ const ImageContainer = styled.div`
 const FrameContainerImage = styled.img`
   width: 100%;
   max-width: 300px;
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     max-width: 700px;
     content: url("/images/desktop-glass-container-image.png");
   }
@@ -119,7 +121,7 @@ const Timer = styled.section`
     letter-spacing: 0px;
     color: #262c55;
   }
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     > h4 {
       font-size: 52px;
       line-height: 85px;
@@ -134,14 +136,14 @@ const TimerDesign = styled.div`
   align-items: center;
   > h3 {
     font-family: "DM Sans";
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 700;
     letter-spacing: 0px;
     text-align: center;
     color: #262c55;
   }
 
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     > h3 {
       font-size: 52px;
       line-height: 94px;
@@ -160,7 +162,7 @@ const TimerDesignText = styled.p`
   text-align: left;
   justify-content: center;
   align-items: center;
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     font-size: 16px;
     line-height: 18px;
   }
@@ -225,7 +227,8 @@ const FormSubmit = styled.button`
     min-width: fit-content;
     width: 35%;
     height: 62px;
-    font-size: 20px;
+    font-size: 19px;
+    padding: 3px;
     line-height: 26px;
     border-radius: 0px 10px 10px 0px;
   }

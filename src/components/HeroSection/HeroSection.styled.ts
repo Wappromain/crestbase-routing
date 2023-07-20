@@ -28,6 +28,7 @@ const HeroLeftContainer = styled.div`
   width: 100%;
   box-sizing: border-box;
   padding: 0 6%;
+  margin-top: -1%;
   @media ${device.laptop} {
     padding: 0 0 0 6%;
     width: 76%;

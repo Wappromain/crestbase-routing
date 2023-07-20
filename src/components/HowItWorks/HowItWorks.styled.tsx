@@ -30,7 +30,7 @@ const HowItWorksGridContainer = styled.div`
 
 const SectionTagLine = styled.p`
   font-family: 'Merriweather';
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 900;
   line-height: 36px;
   letter-spacing: 0px;

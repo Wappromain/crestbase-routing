@@ -20,6 +20,7 @@ const EmptyHeader = () => {
       </Link>
       <div>
         <AppDownloadLink
+          style={{ width: "100%" }}
           onClick={handleDownloadLinkClick}
           src="/images/joint-download-button.svg"
         />
