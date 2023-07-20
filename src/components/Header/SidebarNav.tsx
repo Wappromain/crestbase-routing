@@ -10,6 +10,7 @@ import {
   SidebarMenu,
 } from './Header.styled';
 import { AiOutlineClose } from 'react-icons/ai';
+import Link from 'next/link';
 
 interface SidebarProps {
   isSidebarOpen: boolean;
@@ -42,9 +43,9 @@ const SidebarNav: FC<SidebarProps> = ({
   return (
     <SidebarMenu className={isSidebarOpen ? 'open' : ''}>
       <SidebarHeader>
-        <a href='/'>
+        <Link href='/'>
           <HeaderLogo src='/images/crestbase-logo-footer.svg' alt='' />
-        </a>
+        </Link>
         <MobileHeaderMenuIcon onClick={handleSidebarToggle}>
           <AiOutlineClose size={20} color='#262C55' strokeWidth={0.7} />
         </MobileHeaderMenuIcon>
