@@ -10,6 +10,7 @@ import {
 } from "./Header.styled";
 import SidebarNav from "./SidebarNav";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 interface MobileHeaderProps {
   howItWorksRef: React.RefObject<HTMLDivElement>;
@@ -26,6 +27,8 @@ const MobileHeader: React.FC<MobileHeaderProps> = ({
 }) => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
+  const router = useRouter();
+
   const handleSidebarToggle = () => {
     setSidebarOpen(!isSidebarOpen);
   };
@@ -35,6 +38,10 @@ const MobileHeader: React.FC<MobileHeaderProps> = ({
       ref.current.scrollIntoView({ behavior: "smooth" });
       setSidebarOpen(false); // Close the sidebar after clicking a link
     }
+  };
+
+  const handleDownloadLinkClick = () => {
+    router.push("/comingsoon"); // Navigate to the specified page
   };
 
   return (
@@ -67,7 +74,10 @@ const MobileHeader: React.FC<MobileHeaderProps> = ({
           FAQs
         </HeaderLink>
         <div>
-          <AppDownloadLink src="/images/joint-download-button.svg" />
+          <AppDownloadLink
+            src="/images/joint-download-button.svg"
+            onClick={handleDownloadLinkClick}
+          />
         </div>
       </HeaderLinksContainer>
     </HeaderContainer>

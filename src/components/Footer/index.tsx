@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   CrestbaseInfoContainer,
   DownloadButtons,
@@ -19,30 +19,33 @@ import {
   CopyrightText,
   ImageLink,
   PolicyContainer,
-} from './Footer.styled';
+} from "./Footer.styled";
 
-import { BsDot } from 'react-icons/bs';
+import { BsDot } from "react-icons/bs";
+import Link from "next/link";
 
 const index = () => {
   return (
     <FooterContainer>
       <OrientationContainer>
         <CrestbaseInfoContainer>
-          <FooterImage src='/images/crestbase-logo-footer.svg' />
+          <Link href="/">
+            <FooterImage src="/images/crestbase-logo-footer.svg" />
+          </Link>
         </CrestbaseInfoContainer>
         <OtherLinksContainer>
           <LinksContainer>
-            <ImageLink src='/images/twitter-link.svg' />
-            <ImageLink src='/images/facebook-link.svg' />
-            <ImageLink src='/images/instagram-link.svg' />{' '}
-            <ImageLink src='/images/LinkedIn-link.svg' />
+            <ImageLink src="/images/twitter-link.svg" />
+            <ImageLink src="/images/facebook-link.svg" />
+            <ImageLink src="/images/instagram-link.svg" />{" "}
+            <ImageLink src="/images/LinkedIn-link.svg" />
           </LinksContainer>
         </OtherLinksContainer>
       </OrientationContainer>
       <FooterCopyrightContainer>
         <PolicyContainer>
           <LinkChild>Terms of Use</LinkChild>
-          <BsDot size={17} color='#262C55' />
+          <BsDot size={17} color="#262C55" />
           <LinkChild>Privacy Policy</LinkChild>
         </PolicyContainer>
         <CopyrightText>Copyright @Crestbase, 2023</CopyrightText>

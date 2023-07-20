@@ -1,5 +1,5 @@
-import { device } from '@/styles/global.styles';
-import styled from 'styled-components';
+import { device } from "@/styles/global.styles";
+import styled from "styled-components";
 
 const GridCards = styled.div`
   box-sizing: border-box;
@@ -56,7 +56,7 @@ const CardIconDiv = styled.div`
 const CardIcon = styled.img``;
 
 const CardIconDownloadButton = styled.p`
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
@@ -65,6 +65,8 @@ const CardIconDownloadButton = styled.p`
   text-decoration: underline;
   color: #ffffff;
   padding-right: 6px;
+  cursor: pointer;
+
   @media ${device.laptop} {
     font-size: 14px;
     line-height: 20px;
@@ -84,7 +86,7 @@ const CardText = styled.div`
 `;
 
 const CardTextHeader = styled.h3`
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 21px;
   font-weight: 700;
   line-height: 36px;
@@ -95,7 +97,7 @@ const CardTextHeader = styled.h3`
 `;
 
 const CardTextMessage = styled.p`
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;

@@ -1,5 +1,5 @@
-import { device } from '@/styles/global.styles';
-import styled from 'styled-components';
+import { device } from "@/styles/global.styles";
+import styled from "styled-components";
 
 const HeaderContainer = styled.div`
   box-sizing: border-box;
@@ -43,7 +43,7 @@ const HeaderLinksContainer = styled.div`
 `;
 
 const HeaderLink = styled.p`
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -53,7 +53,9 @@ const HeaderLink = styled.p`
   cursor: pointer;
 `;
 
-const AppDownloadLink = styled.img``;
+const AppDownloadLink = styled.img`
+  cursor: pointer;
+`;
 
 const SidebarMenu = styled.div`
   display: flex;
@@ -97,7 +99,7 @@ const SidebarContent = styled.div`
 `;
 
 const SidebarLinks = styled.p`
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;

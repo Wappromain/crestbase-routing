@@ -1,5 +1,5 @@
-import { device } from '@/styles/global.styles';
-import styled from 'styled-components';
+import { device } from "@/styles/global.styles";
+import styled from "styled-components";
 
 const SectionContainer = styled.div`
   background-color: #ffffff;
@@ -40,7 +40,7 @@ const TextContainer = styled.div`
 `;
 
 const DownloadText = styled.p`
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -56,7 +56,7 @@ const DownloadText = styled.p`
 `;
 
 const StatisticsText = styled.p`
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: 20px;
   font-weight: 900;
   line-height: 30px;
@@ -85,12 +85,14 @@ const AppStoreButton = styled.img`
   width: 52%;
   height: 100%;
   max-width: 167px;
+  cursor: pointer;
 `;
 
 const PlayStoreButton = styled.img`
   width: 50%;
   height: 100%;
   max-width: 160px;
+  cursor: pointer;
 `;
 
 const ImageContainer = styled.div`
@@ -111,7 +113,7 @@ const GlassContainerImage = styled.img`
   width: auto;
   height: 100%;
   @media ${device.laptop} {
-    content: url('/images/desktop-glass-container-image.png');
+    content: url("/images/desktop-glass-container-image.png");
   }
 `;
 

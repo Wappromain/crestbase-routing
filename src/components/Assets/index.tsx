@@ -10,6 +10,7 @@ import {
 import DownloadGlassContainer from './DownloadGlassContainer';
 
 const Assets = () => {
+  
   return (
     <AssetsContainer>
       <ColumnReverse>
