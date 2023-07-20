@@ -17,7 +17,7 @@ import { GlassContainerImage } from "../Assets/DownloadGlassContainer/DownloadGl
 import Countdown from "./Timer";
 
 const ComingSoon = () => {
-  const targetDate = new Date("2023-09-31T23:59:59Z");
+  const targetDate = new Date("2023-08-16T23:59:59Z");
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -51,7 +51,7 @@ const ComingSoon = () => {
                   placeholder="Email"
                 />
               </FormEmailDiv>
-              <FormSubmit type="submit">Send Message</FormSubmit>
+              <FormSubmit type="submit">Join our waiting list</FormSubmit>
             </WaitListForm>
           </TextContainer>
           <ImageContainer>

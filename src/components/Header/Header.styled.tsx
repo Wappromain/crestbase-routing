@@ -12,6 +12,7 @@ const HeaderContainer = styled.div`
   height: 68px;
   align-items: center;
   padding: 0 6%;
+  z-index: 99;
   @media ${device.tabletL} {
     height: 86px;
   }

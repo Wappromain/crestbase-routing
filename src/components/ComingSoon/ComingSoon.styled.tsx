@@ -222,6 +222,7 @@ const FormSubmit = styled.button`
   border: 0px;
   color: #ffffff;
   @media ${device.laptop} {
+    min-width: fit-content;
     width: 35%;
     height: 62px;
     font-size: 20px;
