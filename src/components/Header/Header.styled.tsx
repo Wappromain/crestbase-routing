@@ -12,6 +12,7 @@ const HeaderContainer = styled.div`
   height: 68px;
   align-items: center;
   padding: 0 6%;
+  z-index: 99;
   @media ${device.tabletL} {
     height: 86px;
   }
@@ -44,7 +45,7 @@ const HeaderLinksContainer = styled.div`
 
 const HeaderLink = styled.p`
   font-family: "Inter";
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0em;

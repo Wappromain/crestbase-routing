@@ -19,7 +19,6 @@ interface SidebarProps {
   howItWorksRef: React.RefObject<HTMLDivElement>;
   whatWeOfferRef: React.RefObject<HTMLDivElement>;
   faqsRef: React.RefObject<HTMLDivElement>;
-  assetsRef: React.RefObject<HTMLDivElement>;
 }
 
 const SidebarNav: FC<SidebarProps> = ({
@@ -28,7 +27,6 @@ const SidebarNav: FC<SidebarProps> = ({
   howItWorksRef,
   whatWeOfferRef,
   faqsRef,
-  assetsRef,
 }) => {
   const handleSidebarToggle = () => {
     setSidebarOpen(!isSidebarOpen);
@@ -62,9 +60,6 @@ const SidebarNav: FC<SidebarProps> = ({
         </SidebarLinks>
         <SidebarLinks onClick={() => handleScrollToSection(whatWeOfferRef)}>
           What we offer
-        </SidebarLinks>
-        <SidebarLinks onClick={() => handleScrollToSection(assetsRef)}>
-          Assets
         </SidebarLinks>
         <SidebarLinks onClick={() => handleScrollToSection(faqsRef)}>
           FAQs

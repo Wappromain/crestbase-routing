@@ -1,5 +1,5 @@
-import { device } from '@/styles/global.styles';
-import styled from 'styled-components';
+import { device } from "@/styles/global.styles";
+import styled from "styled-components";
 
 const AssetsContainer = styled.div`
   display: flex;
@@ -56,8 +56,8 @@ const AssetsGridContainer = styled.div`
 `;
 
 const SectionTagLine = styled.p`
-  font-family: 'Merriweather';
-  font-size: 22px;
+  font-family: "Merriweather";
+  font-size: 20px;
   font-weight: 900;
   line-height: 36px;
   letter-spacing: 0px;
@@ -74,7 +74,7 @@ const SectionTagLine = styled.p`
 `;
 
 const SectionDescriptorLine = styled.p`
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;

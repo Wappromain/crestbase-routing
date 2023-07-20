@@ -159,7 +159,7 @@ const FooterCopyrightContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   box-sizing: border-box;
   padding: 39px 0;
   border-top: 1px solid #011b3366;
@@ -168,6 +168,7 @@ const FooterCopyrightContainer = styled.div`
   @media ${device.laptop} {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 `;
 

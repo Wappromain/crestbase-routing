@@ -53,7 +53,6 @@ const MobileHeader: React.FC<MobileHeaderProps> = ({
         <HiOutlineMenuAlt4 size={40} color="#262C55" strokeWidth={0.7} />
       </MobileHeaderMenuIcon>
       <SidebarNav
-        assetsRef={assetsRef}
         howItWorksRef={howItWorksRef}
         whatWeOfferRef={whatWeOfferRef}
         faqsRef={faqsRef}
@@ -66,9 +65,6 @@ const MobileHeader: React.FC<MobileHeaderProps> = ({
         </HeaderLink>
         <HeaderLink onClick={() => handleScrollToSection(whatWeOfferRef)}>
           What we offer
-        </HeaderLink>
-        <HeaderLink onClick={() => handleScrollToSection(assetsRef)}>
-          Assets
         </HeaderLink>
         <HeaderLink onClick={() => handleScrollToSection(faqsRef)}>
           FAQs

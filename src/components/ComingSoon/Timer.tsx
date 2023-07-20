@@ -21,6 +21,10 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
   });
 
   useEffect(() => {
+    // Calculate and set initial time remaining immediately after the component mounts
+    setTimeRemaining(calculateTimeRemaining());
+
+    // Update time remaining every second
     const intervalId = setInterval(() => {
       setTimeRemaining(calculateTimeRemaining());
     }, 1000);
@@ -60,12 +64,8 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
       </TimerDesign>
       <h4>:</h4>
       <TimerDesign>
-        {timeRemaining.seconds !== undefined && ( // Check if seconds is available
-          <>
-            <h3>{timeRemaining.seconds}</h3>
-            <TimerDesignText>Seconds</TimerDesignText>
-          </>
-        )}
+        <h3>{timeRemaining.seconds}</h3>
+        <TimerDesignText>Seconds</TimerDesignText>
       </TimerDesign>
     </Timer>
   );

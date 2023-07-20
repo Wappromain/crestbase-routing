@@ -28,6 +28,7 @@ const HeroLeftContainer = styled.div`
   width: 100%;
   box-sizing: border-box;
   padding: 0 6%;
+  margin-top: -1%;
   @media ${device.laptop} {
     padding: 0 0 0 6%;
     width: 76%;
@@ -95,28 +96,15 @@ const HeroDownloadButtons = styled.div`
 const AppStoreButton = styled.img`
   width: 52%;
   height: 100%;
-  max-width: 129px;
+  max-width: 167px;
   cursor: pointer;
-  @media ${device.mobileM} {
-    max-width: 146px;
-  }
-
-  @media ${device.tablet} {
-    max-width: 167px;
-  }
 `;
 
 const PlayStoreButton = styled.img`
   width: 50%;
   height: 100%;
-  max-width: 122px;
+  max-width: 160px;
   cursor: pointer;
-  @media ${device.mobileM} {
-    max-width: 140px;
-  }
-  @media ${device.tablet} {
-    max-width: 160px;
-  }
 `;
 
 const HeroRightContainer = styled.div`
