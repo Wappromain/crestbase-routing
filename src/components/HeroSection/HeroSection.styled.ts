@@ -1,5 +1,5 @@
-import { device } from '@/styles/global.styles';
-import styled from 'styled-components';
+import { device } from "@/styles/global.styles";
+import styled from "styled-components";
 
 const HeroContainer = styled.div`
   display: flex;
@@ -35,7 +35,7 @@ const HeroLeftContainer = styled.div`
 `;
 
 const HeroMainTextStart = styled.span`
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: calc(1.2rem + 3.5vw);
   font-weight: 900;
   line-height: calc(47px + 1.2vw);
@@ -50,7 +50,7 @@ const HeroMainTextStart = styled.span`
 `;
 
 const HeroMainText = styled.p`
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-size: calc(1.2rem + 3.5vw);
   font-weight: 900;
   line-height: calc(35px + 3vw);
@@ -66,7 +66,7 @@ const HeroMainText = styled.p`
 `;
 
 const HeroSubText = styled.p`
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-size: calc(12px + 1vw);
   font-weight: 400;
   line-height: calc(20px + 1vw);
@@ -89,12 +89,14 @@ const HeroDownloadButtons = styled.div`
   padding: 2rem 6% 0% 0%;
   gap: 15px;
   width: fit-content;
+  z-index: 9;
 `;
 
 const AppStoreButton = styled.img`
   width: 52%;
   height: 100%;
   max-width: 129px;
+  cursor: pointer;
   @media ${device.mobileM} {
     max-width: 146px;
   }
@@ -108,6 +110,7 @@ const PlayStoreButton = styled.img`
   width: 50%;
   height: 100%;
   max-width: 122px;
+  cursor: pointer;
   @media ${device.mobileM} {
     max-width: 140px;
   }
@@ -139,12 +142,12 @@ const HeroPhoneImage = styled.img`
   width: 100%;
 
   @media ${device.tablet} {
-    content: url('/images/tablet-hero-phone-image.svg');
+    content: url("/images/tablet-hero-phone-image.svg");
     width: 100%;
   }
   @media ${device.laptop} {
     margin-left: -14% !important;
-    content: url('/images/desktop-phone-hero-image.svg');
+    content: url("/images/desktop-phone-hero-image.svg");
   }
 `;
 

@@ -1,5 +1,5 @@
-import { device } from '@/styles/global.styles';
-import styled from 'styled-components';
+import { device } from "@/styles/global.styles";
+import styled from "styled-components";
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -15,7 +15,7 @@ const OrientationContainer = styled.div`
   width: 90%;
   display: flex;
   flex-direction: column;
-  @media ${device.laptop} {
+  @media ${device.tablet} {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
@@ -28,7 +28,7 @@ const CrestbaseInfoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  @media ${device.laptop} {
+  @media ${device.tablet} {
     width: 30%;
   }
 `;
@@ -36,7 +36,7 @@ const CrestbaseInfoContainer = styled.div`
 const FooterImage = styled.img``;
 
 const FooterAddress = styled.p`
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-size: 18px;
   font-weight: 400;
   line-height: 31px;
@@ -48,7 +48,7 @@ const FooterAddress = styled.p`
 `;
 
 const FooterEmail = styled.p`
-  font-family: 'Lato';
+  font-family: "Lato";
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -65,7 +65,7 @@ const OtherLinksContainer = styled.div`
   margin-top: 50px;
   align-items: start;
   justify-items: start;
-  @media ${device.laptop} {
+  @media ${device.tablet} {
     margin-top: 5px;
   }
 `;
@@ -79,7 +79,7 @@ const LinksContainer = styled.div`
 `;
 
 const LinkHeader = styled.p`
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-size: 16px;
   font-weight: 700;
   line-height: 25px;
@@ -90,7 +90,7 @@ const LinkHeader = styled.p`
 `;
 
 const LinkChild = styled.p`
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-size: 16px;
   font-weight: 400;
   line-height: 25px;
@@ -116,14 +116,14 @@ const FooterDownloadContainer = styled.div`
   width: 60%;
   margin-top: 20px;
   max-width: 300px;
-  @media ${device.laptop} {
+  @media ${device.tablet} {
     width: 20%;
     margin-top: 0;
   }
 `;
 
 const FooterDownloadContainerText = styled.p`
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;
@@ -180,7 +180,7 @@ const PolicyContainer = styled.div`
 `;
 
 const CopyrightText = styled.p`
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-size: 16px;
   font-weight: 500;
   line-height: 25px;
